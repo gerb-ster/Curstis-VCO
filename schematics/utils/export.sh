@@ -50,11 +50,11 @@ if [[ -f "$MB_FILE" ]]; then
     
     rm -Rf ./tmp-mb
 
-    if [[ -f "../src/ioboard/mainboard.png" ]]; then
-        mv ../src/ioboard/mainboard.png ../$PROJECT_NAME-mainboard.png
+    if [[ -f "../src/mainboard/mainboard.png" ]]; then
+        mv ../src/mainboard/mainboard.png ../$PROJECT_NAME-mainboard.png
     fi
 
-    if [[ -f "../src/ioboard/mainboard.pdf" ]]; then
-        mv ../src/ioboard/mainboard.pdf ../$PROJECT_NAME-mainboard.pdf
+    if [[ -f "../src/mainboard/mainboard.pdf" ]]; then
+        mv ../src/mainboard/mainboard.pdf ../$PROJECT_NAME-mainboard.pdf
     fi
 fi
