@@ -6,7 +6,7 @@ The triangle output is then used to ‘wave shape’ a sine output. For this, I 
 
 I’ve already made some changes to the PCB design, there was an issue with the power rails on the IO board (hence the bodge wire), some transistor values where wrong, and I made some more room for a good timing cap.
 
-## Status
+## Status: Finished
 
 - done: first schematic & board design
 - done: breadboard and test
