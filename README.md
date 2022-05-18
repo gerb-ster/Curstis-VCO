@@ -6,6 +6,10 @@ The triangle output is then used to ‘wave shape’ a sine output. For this, I 
 
 I’ve already made some changes to the PCB design, there was an issue with the power rails on the IO board (hence the bodge wire), some transistor values where wrong, and I made some more room for a good timing cap.
 
+### Update 18-05-2022
+
+Small changes have been made to the io-bard to fix an issue with PWM range. If you have an older board, you can remove r51 from the ioboard and replace it with a wire and replace r49 with a 91k resistor.
+
 ## Status: Finished
 
 - done: first schematic & board design
