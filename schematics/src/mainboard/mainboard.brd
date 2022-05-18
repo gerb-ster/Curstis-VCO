@@ -132,8 +132,8 @@
 <wire x1="43.18" y1="99.06" x2="0" y2="99.06" width="0" layer="20"/>
 <wire x1="0" y1="99.06" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="43.18" y2="0" width="0" layer="20"/>
-<text x="42.545" y="76.2" size="1.4224" layer="25" font="vector" rot="R90">CURTIS 3340 VCO v1.1
-GERBSTER.NL 2020</text>
+<text x="42.545" y="76.2" size="1.4224" layer="25" font="vector" rot="R90">CURTIS 3340 VCO v1.2
+GERBSTER.NL 2022</text>
 <text x="15.875" y="12.7" size="1.27" layer="25" font="vector" rot="R180">-12V</text>
 <text x="31.75" y="12.7" size="1.27" layer="25" font="vector" rot="R180">+12V</text>
 <hole x="34.925" y="81.915" drill="3.2004"/>

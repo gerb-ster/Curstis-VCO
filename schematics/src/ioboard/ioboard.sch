@@ -6631,10 +6631,9 @@ high speed (Philips)</description>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="TL071" device="P" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 <part name="P-10" library="supply1" deviceset="-12V" device=""/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
-<part name="R49" library="resistor" deviceset="R-US_" device="0207/7" value="120K"/>
+<part name="R49" library="resistor" deviceset="R-US_" device="0207/7" value="91k"/>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="R50" library="resistor" deviceset="R-US_" device="0207/7" value="10K"/>
-<part name="R51" library="resistor" deviceset="R-US_" device="0207/7" value="10M"/>
 <part name="P+16" library="supply1" deviceset="+12V" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2" value=""/>
 <part name="R53" library="resistor" deviceset="R-US_" device="0207/7" value="5.6K"/>
@@ -6813,10 +6812,6 @@ high speed (Philips)</description>
 <instance part="R50" gate="G$1" x="101.6" y="99.06" smashed="yes">
 <attribute name="NAME" x="97.79" y="100.5586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="97.79" y="95.758" size="1.778" layer="96"/>
-</instance>
-<instance part="R51" gate="G$1" x="142.24" y="121.92" smashed="yes">
-<attribute name="NAME" x="138.43" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="138.43" y="118.618" size="1.778" layer="96"/>
 </instance>
 <instance part="P+16" gate="1" x="149.86" y="129.54" smashed="yes">
 <attribute name="VALUE" x="152.4" y="129.54" size="1.778" layer="96"/>
@@ -7005,10 +7000,21 @@ high speed (Philips)</description>
 <wire x1="124.46" y1="86.36" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R51" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+16" gate="1" pin="+12V"/>
 <wire x1="149.86" y1="121.92" x2="149.86" y2="127" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="-IN"/>
+<wire x1="129.54" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R34" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="129.54" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
+<junction x="132.08" y="121.92"/>
+<junction x="132.08" y="101.6"/>
+<wire x1="149.86" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -7186,24 +7192,6 @@ high speed (Philips)</description>
 <pinref part="PULSE_WIDTH" gate="G$1" pin="S"/>
 <pinref part="R31" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="-IN"/>
-<wire x1="129.54" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="101.6" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="129.54" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<junction x="132.08" y="121.92"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="121.92" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
-<junction x="132.08" y="101.6"/>
 </segment>
 </net>
 <net name="PWM_IN_IO" class="0">
